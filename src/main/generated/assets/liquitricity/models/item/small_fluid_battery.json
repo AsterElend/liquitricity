@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "liquitricity:item/small_fluid_battery"
+  }
+}

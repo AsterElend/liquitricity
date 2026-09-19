@@ -1,0 +1,12 @@
+1 coal = 4000 energy
+1 coal = 1200 mana = 12000 rf
+4 rf = 1 energy
+12000 / 4 = 3000 energy via mana (slightly less efficient)
+2 rf = 1 ae
+but 1 e = 2ae
+it takes 1600 ae to charge a certus quartz
+so 800 energy.
+81 droplet = 1 milllibucket
+81000 droplet = 1 bucket
+
+whatever. let's just convert e-> droplets and back again.

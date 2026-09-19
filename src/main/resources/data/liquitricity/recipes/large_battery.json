@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "liquitricity:medium_fluid_battery"
+    },
+    {
+      "item": "liquitricity:medium_fluid_battery"
+    }
+  ],
+  "result": {
+    "item": "liquitricity:large_fluid_battery",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "AAA",
+    "LCB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "liquitricity:ohmarine_alloy"
+    },
+    "L": {
+      "item": "minecraft:lightning_rod"
+    },
+    "B": {
+      "item": "minecraft:water_bucket"
+    },
+    "C": {
+      "item": "minecraft:dispenser"
+    }
+  },
+  "result": {
+    "item": "liquitricity:liquitricity_device",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+  [
+    "liquitricity:crackle_flowing",
+    "liquitricity:crackle_static"
+  ]
+}

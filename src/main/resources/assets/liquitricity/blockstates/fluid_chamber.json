@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "liquitricity:block/fluid_chamber"
+    }
+  }
+}

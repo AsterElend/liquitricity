@@ -1,0 +1,15 @@
+{
+  "liquitricity.battery.contains": "Contains ",
+  "liquitricity.battery.buckets": " buckets of ",
+  "block.liquitricity.liquitricity_device": "Liquitricity_device",
+  "block.liquitricity.crackle": "Crackle",
+  "item.liquitricity.small_fluid_battery": "Small Fluid Battery",
+  "item.liquitricity.large_fluid_battery": "Large Fluid Battery",
+  "item.liquitricity.medium_fluid_battery": "Medium Fluid Battery",
+  "item.liquitricity.crackle_bucket": "Crackle Bucket",
+  "item.liquitricity.crackle_bottle": "Crackle Bottle",
+  "block.liquitricity.prismarine_lump": "Prismarine Lump",
+  "block.liquitricity.fluid_chamber": "Fluid Chamber",
+  "liquitricity.group.name": "Liquitricity",
+  "subtitle.liquitricity.hum": "Crackle Hums"
+}

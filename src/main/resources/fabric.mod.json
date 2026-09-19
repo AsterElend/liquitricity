@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "liquitricity",
+	"version": "${version}",
+	"name": "Liquitricity",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/liquitricity/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"aster.liquitricity.Liquitricity"
+		],
+		"fabric-datagen": [
+			"aster.liquitricity.datagen.LiquitricityDataGenerator"
+		],
+		"client": [
+			"aster.liquitricity.client.LiquitricityClient"
+		]
+	},
+	"mixins": [
+		"liquitricity.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"accessWidener": "liquitricity.accesswidener"
+
+}

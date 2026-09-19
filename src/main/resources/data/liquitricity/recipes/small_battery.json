@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    " OO",
+    "OBO",
+    "OO "
+  ],
+  "key": {
+    "O": {
+      "item": "liquitricity:ohmarine_alloy"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "liquitricity:small_fluid_battery"
+  }
+}

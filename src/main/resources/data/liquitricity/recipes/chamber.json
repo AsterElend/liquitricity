@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "OOO",
+    "BCB",
+    "OOO"
+  ],
+  "key": {
+    "O": {
+      "item": "liquitricty:ohmarine_alloy"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "C": {
+      "item": "minecraft:barrel"
+    }
+  },
+  "result": {
+    "item": "liquitricity:fluid_chamber",
+    "count": 1
+  }
+}
