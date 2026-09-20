@@ -8,12 +8,12 @@ import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityT
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FluidBlock;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.BucketItem;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -27,6 +27,11 @@ import java.util.List;
 
 public class LiquitricityRegistry {
     public static final List<Item> ADD_TO_CREATIVE_TAB = new ArrayList<>();
+    public static final FoodComponent CRACKLE_BOTTLE_COMPONENT = new FoodComponent.Builder()
+            .hunger(4)
+            .saturationModifier(.6f)
+            .alwaysEdible()
+            .build();
 
     public static final FlowableFluid CRACKLE_FLUID = registerFluid("crackle", new CrackleFluid.Still());
     public static final FlowableFluid CRACKLE_FLUID_FLOWING = registerFluid("crackle_flowing", new CrackleFluid.Flowing());
@@ -37,7 +42,7 @@ public class LiquitricityRegistry {
     public static final Item MEDIUM_FLUID_BATTERY = registerItem("medium_fluid_battery", new FluidBatteryItem(new FabricItemSettings().maxCount(1), FluidConstants.BUCKET * 4));
     public static final Item LARGE_FLUID_BATTERY = registerItem("large_fluid_battery", new FluidBatteryItem(new FabricItemSettings().maxCount(1), FluidConstants.BUCKET * 8));
     public static final Item CRACKLE_BUCKET = registerItem("crackle_bucket", new BucketItem(CRACKLE_FLUID, new FabricItemSettings().maxCount(1)));
-    public static final Item CRACKLE_BOTTLE = registerItem("crackle_bottle", new Item(new FabricItemSettings().maxCount(4)));
+    public static final Item CRACKLE_BOTTLE = registerItem("crackle_bottle", new LightningFoodItem(new FabricItemSettings().maxCount(4).food(CRACKLE_BOTTLE_COMPONENT)));
 
     public static final Block LIQUITRICITY_DEVICE = registerBlock("liquitricity_device", new LiquitricityDeviceBlock(FabricBlockSettings.copyOf(Blocks.CAULDRON)));
     public static final Block AQUALECTRIC_CHAMBER = registerBlock("fluid_chamber", new FluidChamberBlock(FabricBlockSettings.copyOf(Blocks.CAULDRON)));

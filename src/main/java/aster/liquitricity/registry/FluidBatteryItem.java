@@ -1,18 +1,10 @@
 package aster.liquitricity.registry;
 
-import aster.liquitricity.Liquitricity;
-import aster.liquitricity.LiquitricityRegistry;
-import net.fabricmc.fabric.api.lookup.v1.item.ItemApiLookup;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributeHandler;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributes;
 import net.fabricmc.fabric.api.transfer.v1.storage.base.SingleVariantStorage;
-import net.fabricmc.fabric.impl.transfer.fluid.FluidVariantImpl;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ItemEntity;
-import net.minecraft.entity.LightningEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -75,18 +67,5 @@ public SingleVariantStorage<FluidVariant> getStorage()
         return 0x00fff3;
     }
 
-    @Override
-    public void onItemEntityDestroyed(ItemEntity entity) {
-    super.onItemEntityDestroyed(entity);
-    if (entity.getWorld().isClient) return;
-    if (storage.getResource().equals(LiquitricityRegistry.CRACKLE_FLUID) && storage.getAmount() >= FluidConstants.BUCKET * 8){
-        if (entity.getWorld().isSkyVisible(entity.getBlockPos())){
-            LightningEntity lightning = EntityType.LIGHTNING_BOLT.create(entity.getWorld());
-            if (lightning!=null){
-                lightning.refreshPositionAfterTeleport(entity.getPos());
-                entity.getWorld().spawnEntity(lightning);
-            }
-        }
-    }
-    }
+
 }

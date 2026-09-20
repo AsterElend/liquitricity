@@ -5,12 +5,22 @@
       "item": "minecraft:prismarine"
     },
     {
-      "item": "minecraft:redstone",
-      "count": 4
+      "item": "minecraft:redstone"
+    }, {
+      "item": "minecraft:redstone"
+    }, {
+      "item": "minecraft:redstone"
+    }, {
+      "item": "minecraft:redstone"
     },
     {
-      "item": "minecraft:copper_ingot",
-      "count": 4
+      "item": "minecraft:copper_ingot"
+    },  {
+      "item": "minecraft:copper_ingot"
+    },  {
+      "item": "minecraft:copper_ingot"
+    },  {
+      "item": "minecraft:copper_ingot"
     }
   ],
   "result": {

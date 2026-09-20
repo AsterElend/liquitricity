@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"aster.liquitricity.client.LiquitricityClient"
+		],
+		"emi": [
+			"aster.liquitricity.LiquitricityEmiPlugin"
 		]
 	},
 	"mixins": [

@@ -23,3 +23,9 @@ Conversion is 1 energy -> 1 droplet. For those of you used to millibuckets, 1mb 
 - You can also build a cobblestone generator with the new Crackle fluid to produce prismarine. 
 - Lava source blocks will convert to Sea Lanterns instead of Obsidian when using Crackle. 
 - A basalt generator using Crackle will produce calcite as well. 
+
+### Known Issues
+- Create will generate a fluid draining display recipe for recipe viewers that appears to take a fluid battery, and outputs
+a fluid battery and 1 bucket of water. This is incorrect, attempting to drain a fluid battery will
+simply extract 1 bucket of whatever liquid is in it.
+- I'm not sure how stop that. If anyone knows how to fix this, feel free to make a pull request. 

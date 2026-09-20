@@ -1,15 +1,21 @@
 {
   "liquitricity.battery.contains": "Contains ",
   "liquitricity.battery.buckets": " buckets of ",
-  "block.liquitricity.liquitricity_device": "Liquitricity_device",
+  "block.liquitricity.liquitricity_device": "Liquitricity Device",
   "block.liquitricity.crackle": "Crackle",
   "item.liquitricity.small_fluid_battery": "Small Fluid Battery",
   "item.liquitricity.large_fluid_battery": "Large Fluid Battery",
   "item.liquitricity.medium_fluid_battery": "Medium Fluid Battery",
   "item.liquitricity.crackle_bucket": "Crackle Bucket",
   "item.liquitricity.crackle_bottle": "Crackle Bottle",
+  "item.liquitricity.ohmarine_alloy": "Ohmarine Alloy",
   "block.liquitricity.prismarine_lump": "Prismarine Lump",
   "block.liquitricity.fluid_chamber": "Fluid Chamber",
   "liquitricity.group.name": "Liquitricity",
-  "subtitle.liquitricity.hum": "Crackle Hums"
+  "subtitle.liquitricity.hum": "Crackle Hums",
+  "tag.item.liquitricity.prismarine_bits": "Prismarine Bits",
+  "liquitricity.emi.tooltip.still": "Still",
+  "liquitricity.emi.tooltip.flowing": "Flowing",
+  "liquitricity.emi.tooltip.side": "To The Side",
+  "liquitricity.emi.tooltip.down": "Underneath"
 }
